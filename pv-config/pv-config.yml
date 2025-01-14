@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elasticsearch-pv
+  namespace: observability
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+  - ReadWriteOnce
+  hostPath:
+    path: /mnt/c/Users/Hishmathd/Desktop/Development/devops/exercises/complete/efk-stack/pv-config/storage
